@@ -1,0 +1,11 @@
+{
+  "strength": 5,
+  "technique": "SX",
+  "metric": "EPS",
+  "branch_type": "TCC",
+  "version": "2.6",
+  "language": "python",
+  "n_functions": 104,
+  "loc": 2571,
+  "branch_name": "SX_Entry-Point-Sanitization_TCC_2.6"
+}
