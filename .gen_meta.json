@@ -1,0 +1,11 @@
+{
+  "strength": 7,
+  "technique": "LR",
+  "metric": "PSE",
+  "branch_type": "Bug",
+  "version": "2.6",
+  "language": "python",
+  "n_functions": 100,
+  "loc": 2556,
+  "branch_name": "LR_Project-Specific-Enforcement_Bug_2.6"
+}
