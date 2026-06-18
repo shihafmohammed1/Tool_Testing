@@ -1,0 +1,11 @@
+{
+  "strength": 5,
+  "technique": "SX",
+  "metric": "ACV",
+  "branch_type": "Bug",
+  "version": "2.6",
+  "language": "python",
+  "n_functions": 108,
+  "loc": 2504,
+  "branch_name": "SX_Access-Control-Verification_Bug_2.6"
+}
