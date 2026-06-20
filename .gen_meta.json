@@ -1,0 +1,12 @@
+{
+  "strength": 4,
+  "technique": "DR",
+  "metric": "CVT",
+  "branch_type": "Bug",
+  "version": "2.6",
+  "language": "python",
+  "runtime": "3.12",
+  "n_functions": 108,
+  "loc": 2542,
+  "branch_name": "DR_Community-Vitality-Tracking_Bug_2.6"
+}
