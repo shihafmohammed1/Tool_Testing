@@ -1,0 +1,12 @@
+{
+  "strength": 10,
+  "technique": "SA",
+  "metric": "DOV",
+  "branch_type": "CC",
+  "version": "2.6",
+  "language": "python",
+  "runtime": "3.12",
+  "n_functions": 96,
+  "loc": 2539,
+  "branch_name": "SA_Decision-Outcome-Verification_CC_2.6"
+}
