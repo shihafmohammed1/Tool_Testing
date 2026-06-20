@@ -1,0 +1,12 @@
+{
+  "strength": 10,
+  "technique": "SA",
+  "metric": "DOV",
+  "branch_type": "Bug",
+  "version": "2.6",
+  "language": "python",
+  "runtime": "3.12",
+  "n_functions": 112,
+  "loc": 2536,
+  "branch_name": "SA_Decision-Outcome-Verification_Bug_2.6"
+}
