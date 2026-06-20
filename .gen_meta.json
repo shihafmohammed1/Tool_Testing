@@ -1,0 +1,12 @@
+{
+  "strength": 10,
+  "technique": "SA",
+  "metric": "DOV",
+  "branch_type": "TCC",
+  "version": "2.6",
+  "language": "python",
+  "runtime": "3.12",
+  "n_functions": 100,
+  "loc": 2523,
+  "branch_name": "SA_Decision-Outcome-Verification_TCC_2.6"
+}
