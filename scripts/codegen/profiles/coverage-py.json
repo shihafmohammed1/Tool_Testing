@@ -1,0 +1,7 @@
+{
+  "tool_id": "coverage-py",
+  "language": "python",
+  "output_dir": "src/subject_volume",
+  "max_file_lines": 1200,
+  "package_doc": "Generated subject volume for coverage.py tool testing."
+}

@@ -1,0 +1,19 @@
+{
+  "name": "jscpd-metrics-validator",
+  "version": "1.0.0",
+  "description": "Reference repository for validating JSCPD code duplication metrics (100/100 score)",
+  "private": true,
+  "scripts": {
+    "scan": "jscpd src tests --config .jscpd.json",
+    "validate": "node scripts/validate-metrics.js",
+    "export:testable": "node scripts/export_testable_jscpd.js",
+    "validate:gate": "node scripts/validate_metrics_gate.js --require-100",
+    "test": "node --test tests/suite.test.js"
+  },
+  "devDependencies": {
+    "jscpd": "^4.0.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

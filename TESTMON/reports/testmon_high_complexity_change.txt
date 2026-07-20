@@ -1,0 +1,23 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\91995\Documents\python tool validation\testmon\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+testmon: changed files: tests/test_auth_session.py, tests/test_orders_pricing.py, tests/test_integration_cross_module.py, unchanged files: 85, environment: default
+rootdir: C:\Users\91995\Documents\python tool validation\testmon
+configfile: pytest.ini (WARNING: ignoring pytest config in pyproject.toml!)
+testpaths: tests
+plugins: testmon-2.2.0
+collecting ... collected 14 items / 3 deselected / 11 selected
+
+tests/test_auth_session.py::test_create_session_token_success PASSED     [  9%]
+tests/test_auth_session.py::test_create_session_token_requires_user_id PASSED [ 18%]
+tests/test_auth_session.py::test_create_session_token_deterministic PASSED [ 27%]
+tests/test_orders_pricing.py::test_calculate_regional_price_wholesale_flag PASSED [ 36%]
+tests/test_orders_pricing.py::test_calculate_regional_price_promo_save10 PASSED [ 45%]
+tests/test_orders_pricing.py::test_calculate_regional_price_tiers[US-gold] PASSED [ 54%]
+tests/test_orders_pricing.py::test_calculate_regional_price_quantity_discount PASSED [ 63%]
+tests/test_orders_pricing.py::test_calculate_regional_price_tiers[EU-silver] PASSED [ 72%]
+tests/test_orders_pricing.py::test_calculate_regional_price_tiers[APAC-bronze] PASSED [ 81%]
+tests/test_orders_pricing.py::test_calculate_regional_price_invalid_base PASSED [ 90%]
+tests/test_integration_cross_module.py::test_checkout_context_pipeline PASSED [100%]
+
+====================== 11 passed, 3 deselected in 0.34s =======================

@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\91995\Documents\python tool validation\testmon\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+testmon: changed files: tests/test_auth_session.py, tests/test_integration_cross_module.py, unchanged files: 86, environment: default
+rootdir: C:\Users\91995\Documents\python tool validation\testmon
+configfile: pytest.ini (WARNING: ignoring pytest config in pyproject.toml!)
+testpaths: tests
+plugins: testmon-2.2.0
+collecting ... collected 7 items / 3 deselected / 4 selected
+
+tests/test_auth_session.py::test_create_session_token_deterministic PASSED [ 25%]
+tests/test_auth_session.py::test_create_session_token_success PASSED     [ 50%]
+tests/test_auth_session.py::test_create_session_token_requires_user_id PASSED [ 75%]
+tests/test_integration_cross_module.py::test_checkout_context_pipeline PASSED [100%]
+
+======================= 4 passed, 3 deselected in 0.40s =======================

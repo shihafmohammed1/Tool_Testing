@@ -1,0 +1,38 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\91995\Documents\python tool validation\testmon\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+testmon: changed files: tests/test_orders_pricing.py, tests/test_utils_shared.py, tests/test_integration_cross_module.py, unchanged files: 85, environment: default
+rootdir: C:\Users\91995\Documents\python tool validation\testmon
+configfile: pytest.ini (WARNING: ignoring pytest config in pyproject.toml!)
+testpaths: tests
+plugins: testmon-2.2.0
+collecting ... collected 13 items / 2 deselected / 11 selected
+
+tests/test_orders_pricing.py::test_calculate_regional_price_promo_save10 PASSED [  9%]
+tests/test_orders_pricing.py::test_calculate_regional_price_invalid_base PASSED [ 18%]
+tests/test_orders_pricing.py::test_calculate_regional_price_quantity_discount PASSED [ 27%]
+tests/test_orders_pricing.py::test_calculate_regional_price_tiers[APAC-bronze] PASSED [ 36%]
+tests/test_orders_pricing.py::test_calculate_regional_price_tiers[EU-silver] PASSED [ 45%]
+tests/test_orders_pricing.py::test_calculate_regional_price_tiers[US-gold] PASSED [ 54%]
+tests/test_orders_pricing.py::test_calculate_regional_price_wholesale_flag PASSED [ 63%]
+tests/test_utils_shared.py::test_normalize_identifier_uppercases PASSED  [ 72%]
+tests/test_utils_shared.py::test_normalize_identifier_invalid PASSED     [ 81%]
+tests/test_utils_shared.py::test_normalize_identifier_success FAILED     [ 90%]
+tests/test_integration_cross_module.py::test_checkout_context_pipeline PASSED [100%]
+
+================================== FAILURES ===================================
+______________________ test_normalize_identifier_success ______________________
+
+    def test_normalize_identifier_success():
+>       assert normalize_identifier("order 1001") == "ORDER_1001"
+E       AssertionError: assert 'ORDER-1001' == 'ORDER_1001'
+E         
+E         - ORDER_1001
+E         ?      ^
+E         + ORDER-1001
+E         ?      ^
+
+tests\test_utils_shared.py:10: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_utils_shared.py::test_normalize_identifier_success - Assert...
+================= 1 failed, 10 passed, 2 deselected in 0.84s ==================

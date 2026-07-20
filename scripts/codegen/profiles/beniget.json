@@ -1,0 +1,7 @@
+{
+  "tool_id": "beniget",
+  "language": "python",
+  "output_dir": "subject_repos/generated-volume",
+  "max_file_lines": 1200,
+  "package_doc": "Generated subject volume for beniget template repo."
+}

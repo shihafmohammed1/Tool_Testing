@@ -1,0 +1,7 @@
+{
+  "tool_id": "git-churn",
+  "language": "python",
+  "output_dir": "src/subject_volume",
+  "max_file_lines": 55,
+  "package_doc": "Generated subject volume for Git Churn (small-file modules)."
+}

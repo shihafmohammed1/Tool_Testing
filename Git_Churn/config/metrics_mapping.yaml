@@ -1,0 +1,83 @@
+# Testable Strategy Metrics — PyDriller mappings (from Excel v0.2)
+# Technique | Classification | Metric
+
+metrics:
+  - id: audit_trail_verification
+    technique: All Definition Coverage
+    classification: Reporting Validation
+    metric: Audit Trail Verification
+    tool: pydriller
+    formula: "audit_activity = insertions + deletions"
+    score_formula: "Audit Completeness % = traceable DU pairs / total DU pairs"
+    threshold: ">= 90% audit completeness"
+    frequency: Daily / Per Sprint
+
+  - id: code_churn_score
+    technique: Code Churn
+    classification: Risk-Based Testing Prioritization
+    metric: Code Churn Score
+    tool: pydriller
+    formula: "(lines_added + lines_deleted) / (total_files_changed * time_window_days)"
+    alt_formula: "CodeChurnScore = churn / commit_count"
+    threshold: "< 30% churn per sprint; flag modules > 50%"
+    frequency: Daily
+
+  - id: impact_driven_verification
+    technique: Code Churn
+    classification: Regression Testing Focus
+    metric: Impact-Driven Verification
+    tool: pydriller
+    formula: "ImpactDrivenVerification = churn (high-churn module identification)"
+    score_formula: "Regression Coverage % = high-churn modules in regression / total high-churn modules"
+    threshold: "100% of modules with churn > 30% in regression suite"
+    frequency: Daily
+
+  - id: fault_probability_modeling
+    technique: Code Churn
+    classification: Defect Prediction
+    metric: Fault Probability Modeling
+    tool: pydriller
+    formula: "FaultProbability = (added_lines + deleted_lines) / commit_count"
+    alt_formula: "((lines_added + lines_deleted) * 0.6 + commit_count * 0.4) / normalization_factor"
+    threshold: "Fault Probability Score < 5"
+    frequency: Daily
+
+  - id: validation_suite_updates
+    technique: Code Churn
+    classification: Test Case Maintenance Identification
+    metric: Validation Suite Updates
+    tool: pydriller
+    formula: "changed_test_files / changed_prod_files"
+    alt_formula: "Stale Test % = test files not updated despite source churn > 20%"
+    threshold: "< 5% stale test files"
+    frequency: Daily
+
+  - id: side_effect_mapping
+    technique: Code Churn
+    classification: Change Impact Analysis
+    metric: Side Effect Mapping
+    tool: pydriller
+    formula: "count(commits where file_A and file_B changed together) / total_commits"
+    alt_formula: "side_effect_scope = sum(len(file.changed_methods) for file in modified_files)"
+    threshold: "100% downstream impacted modules regression-tested"
+    frequency: Daily
+
+defaults:
+  time_window_days: 30
+  high_churn_threshold_pct: 30
+  stale_churn_threshold_pct: 20
+  test_path_patterns:
+    - test
+    - tests
+    - spec
+    - __tests__
+  test_file_suffixes:
+    - _test.py
+    - _test.js
+    - _test.ts
+    - .test.py
+    - .test.js
+    - .test.ts
+    - .spec.js
+    - .spec.ts
+    - Test.java

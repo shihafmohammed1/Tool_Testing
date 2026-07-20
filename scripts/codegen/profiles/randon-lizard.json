@@ -1,0 +1,13 @@
+{
+  "tool_id": "randon-lizard",
+  "language": "python",
+  "output_dir": "src/subject_volume",
+  "max_file_lines": 1200,
+  "package_doc": "Generated subject volume for radon/lizard complexity testing.",
+  "complexity_targets": {
+    "low": [1, 5],
+    "medium": [6, 12],
+    "high": [13, 20],
+    "very_high": [21, 28]
+  }
+}

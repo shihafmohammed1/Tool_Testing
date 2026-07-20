@@ -1,0 +1,187 @@
+QA Validation Process for PIT
+
+Objective
+
+Validate whether PIT correctly detects and reports the expected
+metrics by executing it in the QA Testable environment, verifying the
+generated reports, and comparing the results with local execution.
+
+Focus areas include Mutation Score.
+
+Metrics Covered:
+
+  Testing Type                   Technique                       Classification                        Metric
+  ----------------             ----------------                 ----------------                  ----------------
+  Mutation Testing             Mutation Score                   Fault Detection Capability       Logic Error Sensitivity
+  Mutation Testing             Mutation Score                   Test Coverage Quality Validation Test Rigor Assessment
+  Mutation Testing             Mutation Score                   Test Case Improvement Identification Weak Spot Localization
+  Mutation Testing             Mutation Score                   Edge Case Detection              Boundary Mutant Analysis
+  Mutation Testing             Mutation Score                   Fault Detection Capability       Logic Error Sensitivity
+  Mutation Testing             Mutation Score                   Test Coverage Quality Validation Test Rigor Assessment
+  Mutation Testing             Mutation Score                   Fault Detection Capability       Logic Error Sensitivity
+
+Test Data Covered:
+https://github.com/testable-platform/Testable-WhiteBox-Repo/tree/Java_1.1/PIT
+https://github.com/apache/commons-lang
+https://github.com/spring-projects/spring-boot
+
+------------------------------------------------------------------------
+
+Step 1: Understand the Tool
+
+-   Identify what the tool is designed to analyze.
+-   List all metrics officially supported by the tool.
+-   Use AI, official documentation, and the tool's website to understand
+    its capabilities.
+
+Output: - Tool capability analysis - Supported metrics list -
+Unsupported metrics list
+
+------------------------------------------------------------------------
+
+Step 2: Verify Metric Coverage
+
+-   Collect the list of required metrics and classifications.
+-   Compare them against the metrics supported by the tool.
+-   Identify which metrics are supported directly.
+-   Identify which metrics require derivation or are unsupported.
+-   Confirm whether the tool can satisfy the required metric coverage
+    before execution.
+
+------------------------------------------------------------------------
+
+Step 3: Find a Suitable Repository
+
+Provide AI with: - Tool name - Required metrics - Required
+classifications
+
+Ask AI to recommend a suitable repository that: - Supports the
+programming language required by the tool. - Can trigger the tool
+successfully. - Covers the required metrics and classifications. -
+Contains sufficient source code patterns to generate meaningful
+results. - Is either an open-source repository or a repository created
+specifically for testing.
+
+Save the repository link for execution.
+
+------------------------------------------------------------------------
+
+Step 4: Create QA Testable Account and Upload Repository
+
+-   Create an individual account in the QA Testable environment.
+-   Upload the selected repository (either created by us or an
+    open-source repository).
+-   Configure the required tool and execute the analysis.
+
+------------------------------------------------------------------------
+
+Step 5: Record the Tenant ID
+
+-   Record the generated Tenant ID.
+-   The Tenant ID is required because all generated S3 reports are
+    organized under it.
+
+------------------------------------------------------------------------
+
+Step 6: Check S3 Reports
+
+foundation-shared-services -> QA-S3-Readonly -> Click S3 ->
+us2-qa-testable -> Search "qa" -> Click "qa-op" -> cell-001 -> Search
+using the Tenant ID
+
+------------------------------------------------------------------------
+
+Step 7: Check Tool Folder
+
+Case 1 – Tool Folder Exists - Download raw report, JSON/XML/CSV report,
+and output files. - Validate file generation and expected metrics. -
+Verify the report with AI.
+
+Case 2 – Tool Folder Does Not Exist - Verify the repository. - Execute
+the tool again. - Record the Tenant ID. - Check the S3 location again. -
+Repeat until reports are generated.
+
+Case 3 – Tool not execute with Multiple repos so execute in local
+
+Proceed with:
+- Step 8: Validate Report Contents
+- Step 9: If No Metric Values Are Generated
+- Step 10: If Results Are Still Incorrect
+- Step 11: Cross-Check the Results
+- Step 12: Compare Local and QA Results
+- Step 13: Verify Parameters Covered
+
+
+Step 8: Validate Report Contents
+
+-   Check whether the report is empty.
+-   Verify expected metrics are present.
+-   Verify report format.
+-   Verify expected output files.
+
+
+Step 9: If No Metric Values Are Generated
+
+-   Repository does not trigger the required metrics.
+-   Insufficient or unsuitable test data.
+
+Action: - Modify the repository. - Add suitable code constructs. -
+Execute the tool again.
+
+Step 10: If Results Are Still Incorrect
+
+-   Install the tool locally.
+-   Clone the repository.
+-   Execute the tool locally.
+-   Generate the raw output.
+-   Compare the local output with QA Testable output.
+
+
+Step 11: Cross-Check the Results
+
+Compare: - Expected metrics - Generated metrics - AI validation -
+Official documentation
+
+Verify: - Metric names - Metric values - Counts - Percentages - Formulas
+(if applicable)
+
+
+Step 12: Compare Local and QA Results
+
+Compare: - Number of files analyzed - Metrics generated - Metric
+values - Missing metrics - Report format
+
+
+
+Step 13: Verify Parameters Covered
+
+Identify: - Parameters analyzed - Supported metrics - Unsupported
+metrics - Derived metrics - Files scanned - Rules executed - Report
+outputs
+
+------------------------------------------------------------------------
+
+REPO NAME
+
+Repository Name: https://github.com/testable-platform/Testable-WhiteBox-Repo/tree/Java_1.1/PIT
+
+Golden Repo Folder: PIT
+
+Jira E2E Ticket: TP-2834
+
+------------------------------------------------------------------------
+
+Expected Deliverables
+
+-   Tool capability analysis
+-   Metric coverage validation
+-   Repository Name
+-   QA Testable execution evidence
+-   Tenant ID
+-   S3 report
+-   Downloaded tool reports
+-   AI validation of report contents
+-   Local execution report (if required)
+-   QA vs Local comparison
+-   Final metric coverage summary
+

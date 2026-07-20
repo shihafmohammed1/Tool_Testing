@@ -1,0 +1,1 @@
+"""Commerce platform validation module."""

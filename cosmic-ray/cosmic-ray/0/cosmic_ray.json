@@ -1,0 +1,75 @@
+{
+  "exit": 0,
+  "dump_ok": true,
+  "dump_path": "cosmic-ray/0/cosmic_ray_dump.jsonl",
+  "session_file": "session.sqlite",
+  "totalMutants": 156,
+  "killedMutants": 156,
+  "survivedMutants": 0,
+  "LogicErrorSensitivity": 100.0,
+  "TestRigorAssessment": 100.0,
+  "WeakSpotLocalization": 100.0,
+  "BoundaryMutantAnalysis": 100.0,
+  "ChangeResilienceTesting": 100.0,
+  "SemanticIntegrityCheck": 100.0,
+  "MutationKillRatePercent": 100.0,
+  "gate_name": "Mutation Score Gate",
+  "tool": "cosmic-ray",
+  "execution_status": "COMPLETED",
+  "total_mutants": 156,
+  "killed_mutants": 156,
+  "survived_mutants": 0,
+  "mutation_kill_rate_percent": 100.0,
+  "all_gates_passed": true,
+  "metrics": [
+    {
+      "classification": "Fault Detection Capability",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Test Coverage Quality Validation",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Test Case Improvement Identification",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Edge Case Detection",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Regression Testing Validation",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Code Logic Validation",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Test Suite Effectiveness Evaluation",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    }
+  ]
+}

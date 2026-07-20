@@ -1,0 +1,7 @@
+{
+  "tool_id": "jscpd",
+  "language": "javascript",
+  "output_dir": "src/subject_volume",
+  "max_file_lines": 80,
+  "package_doc": "Generated unique JS subject volume for JSCPD (zero duplication)."
+}

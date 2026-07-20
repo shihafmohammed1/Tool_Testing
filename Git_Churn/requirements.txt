@@ -1,0 +1,5 @@
+pydriller>=2.6
+pandas>=2.0
+openpyxl>=3.1
+pyyaml>=6.0
+pytest>=8.0

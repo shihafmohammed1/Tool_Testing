@@ -1,0 +1,72 @@
+{
+  "exit": 0,
+  "scan_ok": true,
+  "report_path": "jscpd/0/jscpd_report.json",
+  "cloneCount": 0,
+  "duplicatedLines": 0,
+  "totalLines": 348,
+  "DuplicationPercent": 0,
+  "MultiPointFailureProbability": 100,
+  "RedundancyLocalization": 100,
+  "StructuralCleanlinessScore": 100,
+  "TestSuiteStreamlining": 100,
+  "AbstractionPotential": 100,
+  "RegressionFocusMapping": 100,
+  "SynchronizationVerification": 100,
+  "gate_name": "Code Duplication Gate",
+  "tool": "jscpd",
+  "execution_status": "COMPLETED",
+  "overall_score": 100,
+  "all_gates_passed": true,
+  "metrics": [
+    {
+      "classification": "Defect Propagation Risk Detection",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Refactoring Identification",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Code Quality Assessment",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Test Maintenance Reduction",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Refactoring Opportunity Detection",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Risk-Based Testing Prioritization",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    },
+    {
+      "classification": "Maintainability Testing",
+      "value": 100,
+      "execution_status": "COMPLETED",
+      "result": "PASS",
+      "coverage": 100
+    }
+  ]
+}

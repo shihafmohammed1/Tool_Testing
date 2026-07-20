@@ -1,0 +1,13 @@
+{
+  "key": "TP-2948",
+  "fields": {
+    "summary": "QA- End to End Validation for TypeScript tool \"JSCPD\"",
+    "description": "## Summary\n\nPerform end-to-end validation of the **JSCPD** tool on a **TypeScript** repository using the Testable QA environment. Verify successful execution, metric/report accuracy, and correct platform ingestion.\n\n### Objective\n\nValidate that **JSCPD** integrates correctly with the Testable White Box analysis pipeline and produces the expected outputs mapped in **Testable_Strategy_Metrics_Mapping_v0.2** (White Box sheet).\n\nPrimary TypeScript tool for code duplication metrics.\n\n### Strategy Mapping Reference\n\n| Item | Value |\n| --- | --- |\n| Source file | Testable_Strategy_Metrics_Mapping_v0.2 (White Box sheet) |\n| Tool | JSCPD |\n| Metrics covered by this tool | **7** |\n| Language focus | TypeScript |\n\n### Metrics Covered (from Strategy v0.2)\n\n| L3 Technique | L4 Classification | L5 Metric | TS Primary | TS Secondary |\n| --- | --- | --- | --- | --- |\n| Code Duplication | Defect Propagation Risk Detection | Multi-Point Failure Probability | jscpd | — |\n| Code Duplication | Refactoring Identification | Redundancy Localization | jscpd | — |\n| Code Duplication | Code Quality Assessment | Structural Cleanliness Score | jscpd | — |\n| Code Duplication | Test Maintenance Reduction | Test Suite Streamlining | jscpd | — |\n| Code Duplication | Refactoring Opportunity Detection | Abstraction Potential | jscpd | — |\n| Code Duplication | Risk-Based Testing Prioritization | Regression Focus Mapping | jscpd | — |\n| Code Duplication | Maintainability Testing | Synchronization Verification | jscpd | — |\n\n### Validation Scope\n\n* Verify the tool executes successfully on a representative TypeScript repository.\n* Confirm raw tool output is generated without errors.\n* Validate mapped metrics above are present directly or via documented derivation.\n* Compare platform-ingested values with local tool execution.\n* Ensure reports are stored/displayed correctly in Testable.\n\n### Expected Result\n\n* **JSCPD** completes execution successfully.\n* All **7** mapped metrics are supported or correctly derived.\n* Results display correctly in Testable without tool failure messages.\n\n### Deliverables\n\n* End-to-end validation results\n* Execution logs\n* Generated JSCPD report/output\n* Screenshots of successful execution (if applicable)",
+    "labels": [
+      "TypeScript",
+      "Tool-Validation",
+      "WhiteBox",
+      "JSCPD"
+    ]
+  }
+}

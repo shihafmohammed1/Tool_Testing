@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semgrep-bandit-platform"
+version = "1.0.0"
+description = "Semgrep OSS + Bandit wrapper that emits Testable-compatible JSON for 7 SAST metrics"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "semgrep>=1.69",
+    "bandit>=1.7",
+]
+
+[project.scripts]
+semgrep-bandit-platform = "semgrep_bandit_platform.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["semgrep_bandit_platform*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

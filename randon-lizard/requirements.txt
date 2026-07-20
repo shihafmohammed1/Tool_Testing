@@ -1,0 +1,16 @@
+# Testing
+pytest==8.3.2
+
+# Coverage
+coverage==7.6.1
+
+# Linting (no black)
+ruff==0.6.4
+pylint==3.2.6
+
+# Type checking
+mypy==1.11.2
+
+# Testable Technical Debt Impact (Radon / Lizard)
+radon==6.0.1
+lizard==1.17.10

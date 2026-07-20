@@ -1,0 +1,1 @@
+"""Subject volume notifications module."""

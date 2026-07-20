@@ -1,0 +1,94 @@
+{
+  "tool": "Semgrep OSS + Bandit",
+  "strategy": "Security White-box Testing",
+  "category": "Static Vulnerabilities (SAST)",
+  "metrics_total": 7,
+  "target_repository": "sample_subject",
+  "source_path": "sample_subject",
+  "metrics": [
+    {
+      "l3_strategy": "Security White-box Testing",
+      "l4_classification": "Secure Coding Validation",
+      "l5_metric": "Best Practice Compliance",
+      "normalized_score_key": "Secure Coding Validation",
+      "score_field": "secure_coding_validation_score",
+      "semgrep_bandit_native": true,
+      "required_artifacts": ["artifacts/training/bandit_report.json", "artifacts/training/semgrep_report.json"],
+      "raw_parameters": ["files_scanned", "lines_of_code", "bandit_findings", "semgrep_findings", "secure_coding_issues", "high_severity_count"],
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3)",
+      "expected_score": 100
+    },
+    {
+      "l3_strategy": "Security White-box Testing",
+      "l4_classification": "Input Validation Testing",
+      "l5_metric": "Entry Point Sanitization",
+      "normalized_score_key": "Input Validation Testing",
+      "score_field": "input_validation_testing_score",
+      "semgrep_bandit_native": true,
+      "required_artifacts": ["artifacts/training/bandit_report.json", "artifacts/training/semgrep_report.json"],
+      "raw_parameters": ["input_validation_issues", "total_findings", "files_scanned"],
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3)",
+      "expected_score": 100
+    },
+    {
+      "l3_strategy": "Security White-box Testing",
+      "l4_classification": "Data Flow Security Analysis",
+      "l5_metric": "Sensitive Information Tracking",
+      "normalized_score_key": "Data Flow Security Analysis",
+      "score_field": "data_flow_security_analysis_score",
+      "semgrep_bandit_native": true,
+      "required_artifacts": ["artifacts/training/bandit_report.json", "artifacts/training/semgrep_report.json"],
+      "raw_parameters": ["data_flow_issues", "total_findings", "lines_of_code"],
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3)",
+      "expected_score": 100
+    },
+    {
+      "l3_strategy": "Security White-box Testing",
+      "l4_classification": "Authentication & Authorization Weakness Detection",
+      "l5_metric": "Access Control Verification",
+      "normalized_score_key": "Authentication & Authorization Weakness Detection",
+      "score_field": "auth_weakness_detection_score",
+      "semgrep_bandit_native": true,
+      "required_artifacts": ["artifacts/training/bandit_report.json", "artifacts/training/semgrep_report.json"],
+      "raw_parameters": ["auth_weakness_issues", "high_severity_count", "bandit_findings"],
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3)",
+      "expected_score": 100
+    },
+    {
+      "l3_strategy": "Security White-box Testing",
+      "l4_classification": "Dependency & Library Vulnerability Detection",
+      "l5_metric": "Supply Chain Security",
+      "normalized_score_key": "Dependency & Library Vulnerability Detection",
+      "score_field": "dependency_vulnerability_detection_score",
+      "semgrep_bandit_native": true,
+      "required_artifacts": ["artifacts/training/bandit_report.json", "artifacts/training/semgrep_report.json"],
+      "raw_parameters": ["dependency_vuln_issues", "dependency_count", "semgrep_findings"],
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3)",
+      "expected_score": 100
+    },
+    {
+      "l3_strategy": "Security White-box Testing",
+      "l4_classification": "Compliance & Security Standard Validation",
+      "l5_metric": "Regulatory Alignment",
+      "normalized_score_key": "Compliance & Security Standard Validation",
+      "score_field": "compliance_validation_score",
+      "semgrep_bandit_native": true,
+      "required_artifacts": ["artifacts/training/bandit_report.json", "artifacts/training/semgrep_report.json"],
+      "raw_parameters": ["compliance_issues", "semgrep_rules_executed", "files_scanned"],
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3)",
+      "expected_score": 100
+    },
+    {
+      "l3_strategy": "Security White-box Testing",
+      "l4_classification": "Security Vulnerability Detection",
+      "l5_metric": "Exploit Surface Identification",
+      "normalized_score_key": "Security Vulnerability Detection",
+      "score_field": "security_vulnerability_detection_score",
+      "semgrep_bandit_native": true,
+      "required_artifacts": ["artifacts/training/bandit_report.json", "artifacts/training/semgrep_report.json"],
+      "raw_parameters": ["security_vuln_issues", "high_severity_count", "medium_severity_count", "low_severity_count"],
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3)",
+      "expected_score": 100
+    }
+  ]
+}

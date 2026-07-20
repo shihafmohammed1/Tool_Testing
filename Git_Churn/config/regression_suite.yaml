@@ -1,0 +1,40 @@
+# Regression suite mapping for Impact-Driven Verification (PyDriller path format)
+mappings:
+  - prod: models.py
+    test: test_models.py
+  - prod: scoring.py
+    test: test_scoring.py
+  - prod: file_filters.py
+    test: test_file_filters.py
+  - prod: paths.py
+    test: test_repo_paths.py
+  - prod: snapshot_builder.py
+    test: test_snapshot_builder.py
+  - prod: repo_loader.py
+    test: test_repo_loader.py
+  - prod: excel_loader.py
+    test: test_excel_loader.py
+  - prod: regression_registry.py
+    test: test_regression_registry.py
+  - prod: metrics_engine.py
+    test: test_metrics_engine.py
+  - prod: common.py
+    test: test_common.py
+  - prod: churn_helpers.py
+    test: test_churn_helpers.py
+  - prod: audit_trail.py
+    test: test_audit_trail.py
+  - prod: churn_score.py
+    test: test_churn_score.py
+  - prod: validation_suite.py
+    test: test_validation_suite.py
+  - prod: impact_verification.py
+    test: test_impact_verification.py
+  - prod: fault_probability.py
+    test: test_fault_probability.py
+  - prod: side_effect.py
+    test: test_side_effect.py
+  - prod: markdown.py
+    test: test_report_markdown.py
+  - prod: run_metrics.py
+    test: test_run_metrics.py

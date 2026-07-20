@@ -1,0 +1,14 @@
+{
+  "tool": "Semgrep OSS + Bandit",
+  "target_repository": "sample_subject",
+  "metrics_total": 7,
+  "metrics_covered": 7,
+  "metric_coverage_complete": true,
+  "Secure Coding Validation": 100,
+  "Input Validation Testing": 100,
+  "Data Flow Security Analysis": 100,
+  "Authentication & Authorization Weakness Detection": 100,
+  "Dependency & Library Vulnerability Detection": 100,
+  "Compliance & Security Standard Validation": 100,
+  "Security Vulnerability Detection": 100
+}

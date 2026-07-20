@@ -1,0 +1,34 @@
+{
+  "tool": "Semgrep OSS + Bandit",
+  "strategy": "Security White-box Testing",
+  "category": "Static Vulnerabilities (SAST)",
+  "target_repository": "sample_subject",
+  "steps": [
+    {
+      "order": 1,
+      "description": "Install Semgrep OSS and Bandit",
+      "command": "python -m pip install semgrep>=1.69 bandit>=1.7"
+    },
+    {
+      "order": 2,
+      "description": "Run Bandit recursive scan",
+      "command": "python -m bandit -r sample_subject -f json -o artifacts/training/bandit_report.json --exit-zero"
+    },
+    {
+      "order": 3,
+      "description": "Run Semgrep OSS multi-config scan",
+      "command": "semgrep scan --config auto --config p/python --config p/owasp-top-ten --config p/security-audit --config p/supply-chain --json -o artifacts/training/semgrep_report.json sample_subject"
+    },
+    {
+      "order": 4,
+      "description": "Export platform bundle with 100/100 metrics",
+      "command": "python scripts/export_platform_bundle.py"
+    }
+  ],
+  "expected_output": {
+    "metrics_total": 7,
+    "metrics_covered": 7,
+    "total_findings": 0,
+    "Secure Coding Validation": 100
+  }
+}

@@ -1,0 +1,28 @@
+[MAIN]
+jobs=1
+ignore=sample_code,tools,scripts,reports
+ignore-paths=
+    ^sample_code/,
+    ^tests/,
+    ^tools/,
+    ^plugins/,
+    ^scripts/,
+    ^reports/
+
+[MESSAGES CONTROL]
+disable=
+    missing-module-docstring,
+    too-few-public-methods,
+    mixed-line-endings
+
+[FORMAT]
+max-line-length=100
+
+[DESIGN]
+max-args=5
+max-branches=12
+max-statements=50
+max-nested-blocks=5
+
+[VARIABLES]
+init-import=no

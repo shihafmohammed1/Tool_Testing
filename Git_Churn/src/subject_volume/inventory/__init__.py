@@ -1,0 +1,1 @@
+"""Subject volume inventory module."""

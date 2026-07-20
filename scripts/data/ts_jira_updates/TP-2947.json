@@ -1,0 +1,13 @@
+{
+  "key": "TP-2947",
+  "fields": {
+    "summary": "QA- End to End Validation for TypeScript tool \"PLATO\"",
+    "description": "## Summary\n\nPerform end-to-end validation of the **PLATO** tool on a **TypeScript** repository using the Testable QA environment. Verify successful execution, metric/report accuracy, and correct platform ingestion.\n\n### Objective\n\nValidate that **PLATO** integrates correctly with the Testable White Box analysis pipeline and produces the expected outputs mapped in **Testable_Strategy_Metrics_Mapping_v0.2** (White Box sheet).\n\nSecondary/support TypeScript tool paired with Lizard for cyclomatic complexity metrics.\n\n### Strategy Mapping Reference\n\n| Item | Value |\n| --- | --- |\n| Source file | Testable_Strategy_Metrics_Mapping_v0.2 (White Box sheet) |\n| Tool | PLATO |\n| Metrics covered by this tool | **6** |\n| Language focus | TypeScript |\n\n### Metrics Covered (from Strategy v0.2)\n\n| L3 Technique | L4 Classification | L5 Metric | TS Primary | TS Secondary |\n| --- | --- | --- | --- | --- |\n| Cyclomatic Complexity | Static Analysis Metric | Execution Path Integrity | Lizard | Plato |\n| Cyclomatic Complexity | Decision Coverage | Decision Outcome Verification | Lizard | Plato |\n| Cyclomatic Complexity | Condition Coverage | Logical Sub-expression Validation | Lizard | Plato |\n| Cyclomatic Complexity | Logic Coverage Metric | Total Logical Combinatorial Coverage | Lizard | Plato |\n| Cyclomatic Complexity | Maintainability Analysis | Technical Debt Impact | Lizard | Plato |\n| Cyclomatic Complexity | Test Prioritization | QA Resource Allocation | Lizard | Plato |\n\n### Validation Scope\n\n* Verify the tool executes successfully on a representative TypeScript repository.\n* Confirm raw tool output is generated without errors.\n* Validate mapped metrics above are present directly or via documented derivation.\n* Compare platform-ingested values with local tool execution.\n* Ensure reports are stored/displayed correctly in Testable.\n\n### Expected Result\n\n* **PLATO** completes execution successfully.\n* All **6** mapped metrics are supported or correctly derived.\n* Results display correctly in Testable without tool failure messages.\n\n### Deliverables\n\n* End-to-end validation results\n* Execution logs\n* Generated PLATO report/output\n* Screenshots of successful execution (if applicable)",
+    "labels": [
+      "TypeScript",
+      "Tool-Validation",
+      "WhiteBox",
+      "PLATO"
+    ]
+  }
+}

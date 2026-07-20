@@ -1,0 +1,752 @@
+{
+  "tool": "Semgrep OSS + Bandit",
+  "strategy": "Security White-box Testing",
+  "category": "Static Vulnerabilities (SAST)",
+  "execution_status": "Completed",
+  "output_complete": true,
+  "metric_coverage_complete": true,
+  "metrics_total": 7,
+  "metrics_covered": 7,
+  "target_repository": "sample_subject",
+  "source_path": "sample_subject",
+  "bandit_report": {
+    "errors": [],
+    "generated_at": "2026-07-13T12:56:54Z",
+    "metrics": {
+      "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\app.py": {
+        "CONFIDENCE.HIGH": 0,
+        "CONFIDENCE.LOW": 0,
+        "CONFIDENCE.MEDIUM": 0,
+        "CONFIDENCE.UNDEFINED": 0,
+        "SEVERITY.HIGH": 0,
+        "SEVERITY.LOW": 0,
+        "SEVERITY.MEDIUM": 0,
+        "SEVERITY.UNDEFINED": 0,
+        "loc": 38,
+        "nosec": 0,
+        "skipped_tests": 0
+      },
+      "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\test_app.py": {
+        "CONFIDENCE.HIGH": 0,
+        "CONFIDENCE.LOW": 0,
+        "CONFIDENCE.MEDIUM": 0,
+        "CONFIDENCE.UNDEFINED": 0,
+        "SEVERITY.HIGH": 0,
+        "SEVERITY.LOW": 0,
+        "SEVERITY.MEDIUM": 0,
+        "SEVERITY.UNDEFINED": 0,
+        "loc": 25,
+        "nosec": 0,
+        "skipped_tests": 0
+      },
+      "_totals": {
+        "CONFIDENCE.HIGH": 0,
+        "CONFIDENCE.LOW": 0,
+        "CONFIDENCE.MEDIUM": 0,
+        "CONFIDENCE.UNDEFINED": 0,
+        "SEVERITY.HIGH": 0,
+        "SEVERITY.LOW": 0,
+        "SEVERITY.MEDIUM": 0,
+        "SEVERITY.UNDEFINED": 0,
+        "loc": 63,
+        "nosec": 0,
+        "skipped_tests": 0
+      }
+    },
+    "results": []
+  },
+  "semgrep_report": {
+    "version": "1.169.0",
+    "results": [],
+    "errors": [],
+    "paths": {
+      "scanned": [
+        "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\app.py",
+        "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\requirements.txt",
+        "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\test_app.py"
+      ]
+    },
+    "time": {
+      "rules": [],
+      "rules_parse_time": 0.5235660076141357,
+      "profiling_times": {
+        "config_time": 25.246110677719116,
+        "core_time": 1.1974546909332275,
+        "ignores_time": 0.0030858516693115234,
+        "total_time": 26.481956243515015
+      },
+      "parsing_time": {
+        "total_time": 0.0,
+        "per_file_time": {
+          "mean": 0.0,
+          "std_dev": 0.0
+        },
+        "very_slow_stats": {
+          "time_ratio": 0.0,
+          "count_ratio": 0.0
+        },
+        "very_slow_files": []
+      },
+      "scanning_time": {
+        "total_time": 0.08725166320800781,
+        "per_file_time": {
+          "mean": 0.010906457901000977,
+          "std_dev": 0.0003030150522107533
+        },
+        "very_slow_stats": {
+          "time_ratio": 0.0,
+          "count_ratio": 0.0
+        },
+        "very_slow_files": []
+      },
+      "matching_time": {
+        "total_time": 0.0,
+        "per_file_and_rule_time": {
+          "mean": 0.0,
+          "std_dev": 0.0
+        },
+        "very_slow_stats": {
+          "time_ratio": 0.0,
+          "count_ratio": 0.0
+        },
+        "very_slow_rules_on_files": []
+      },
+      "tainting_time": {
+        "total_time": 0.0,
+        "per_def_and_rule_time": {
+          "mean": 0.0,
+          "std_dev": 0.0
+        },
+        "very_slow_stats": {
+          "time_ratio": 0.0,
+          "count_ratio": 0.0
+        },
+        "very_slow_rules_on_defs": []
+      },
+      "fixpoint_timeouts": [],
+      "prefiltering": {
+        "project_level_time": 0.0,
+        "file_level_time": 0.0,
+        "rules_with_project_prefilters_ratio": 0.0,
+        "rules_with_file_prefilters_ratio": 0.9913669064748202,
+        "rules_selected_ratio": 0.03741007194244604,
+        "rules_matched_ratio": 0.03741007194244604
+      },
+      "targets": [],
+      "total_bytes": 0,
+      "max_memory_bytes": 855701888
+    },
+    "engine_requested": "OSS",
+    "skipped_rules": [],
+    "profiling_results": []
+  },
+  "supplemental_raw_data": {
+    "bandit_report": {
+      "errors": [],
+      "generated_at": "2026-07-13T12:56:54Z",
+      "metrics": {
+        "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\app.py": {
+          "CONFIDENCE.HIGH": 0,
+          "CONFIDENCE.LOW": 0,
+          "CONFIDENCE.MEDIUM": 0,
+          "CONFIDENCE.UNDEFINED": 0,
+          "SEVERITY.HIGH": 0,
+          "SEVERITY.LOW": 0,
+          "SEVERITY.MEDIUM": 0,
+          "SEVERITY.UNDEFINED": 0,
+          "loc": 38,
+          "nosec": 0,
+          "skipped_tests": 0
+        },
+        "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\test_app.py": {
+          "CONFIDENCE.HIGH": 0,
+          "CONFIDENCE.LOW": 0,
+          "CONFIDENCE.MEDIUM": 0,
+          "CONFIDENCE.UNDEFINED": 0,
+          "SEVERITY.HIGH": 0,
+          "SEVERITY.LOW": 0,
+          "SEVERITY.MEDIUM": 0,
+          "SEVERITY.UNDEFINED": 0,
+          "loc": 25,
+          "nosec": 0,
+          "skipped_tests": 0
+        },
+        "_totals": {
+          "CONFIDENCE.HIGH": 0,
+          "CONFIDENCE.LOW": 0,
+          "CONFIDENCE.MEDIUM": 0,
+          "CONFIDENCE.UNDEFINED": 0,
+          "SEVERITY.HIGH": 0,
+          "SEVERITY.LOW": 0,
+          "SEVERITY.MEDIUM": 0,
+          "SEVERITY.UNDEFINED": 0,
+          "loc": 63,
+          "nosec": 0,
+          "skipped_tests": 0
+        }
+      },
+      "results": []
+    },
+    "semgrep_report": {
+      "version": "1.169.0",
+      "results": [],
+      "errors": [],
+      "paths": {
+        "scanned": [
+          "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\app.py",
+          "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\requirements.txt",
+          "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\test_app.py"
+        ]
+      },
+      "time": {
+        "rules": [],
+        "rules_parse_time": 0.5235660076141357,
+        "profiling_times": {
+          "config_time": 25.246110677719116,
+          "core_time": 1.1974546909332275,
+          "ignores_time": 0.0030858516693115234,
+          "total_time": 26.481956243515015
+        },
+        "parsing_time": {
+          "total_time": 0.0,
+          "per_file_time": {
+            "mean": 0.0,
+            "std_dev": 0.0
+          },
+          "very_slow_stats": {
+            "time_ratio": 0.0,
+            "count_ratio": 0.0
+          },
+          "very_slow_files": []
+        },
+        "scanning_time": {
+          "total_time": 0.08725166320800781,
+          "per_file_time": {
+            "mean": 0.010906457901000977,
+            "std_dev": 0.0003030150522107533
+          },
+          "very_slow_stats": {
+            "time_ratio": 0.0,
+            "count_ratio": 0.0
+          },
+          "very_slow_files": []
+        },
+        "matching_time": {
+          "total_time": 0.0,
+          "per_file_and_rule_time": {
+            "mean": 0.0,
+            "std_dev": 0.0
+          },
+          "very_slow_stats": {
+            "time_ratio": 0.0,
+            "count_ratio": 0.0
+          },
+          "very_slow_rules_on_files": []
+        },
+        "tainting_time": {
+          "total_time": 0.0,
+          "per_def_and_rule_time": {
+            "mean": 0.0,
+            "std_dev": 0.0
+          },
+          "very_slow_stats": {
+            "time_ratio": 0.0,
+            "count_ratio": 0.0
+          },
+          "very_slow_rules_on_defs": []
+        },
+        "fixpoint_timeouts": [],
+        "prefiltering": {
+          "project_level_time": 0.0,
+          "file_level_time": 0.0,
+          "rules_with_project_prefilters_ratio": 0.0,
+          "rules_with_file_prefilters_ratio": 0.9913669064748202,
+          "rules_selected_ratio": 0.03741007194244604,
+          "rules_matched_ratio": 0.03741007194244604
+        },
+        "targets": [],
+        "total_bytes": 0,
+        "max_memory_bytes": 855701888
+      },
+      "engine_requested": "OSS",
+      "skipped_rules": [],
+      "profiling_results": []
+    },
+    "requirements_path": "D:\\Python tool execution\\python-tool-testing-semgrep-bandit\\sample_subject\\requirements.txt"
+  },
+  "summary": {
+    "files_scanned": 2,
+    "lines_of_code": 63,
+    "bandit_findings": 0,
+    "semgrep_findings": 0,
+    "total_findings": 0,
+    "high_severity_count": 0,
+    "medium_severity_count": 0,
+    "low_severity_count": 0,
+    "dependency_count": 2,
+    "semgrep_rules_executed": 37,
+    "secure_files_ratio": 100,
+    "input_validation_ratio": 100,
+    "clean_files": 200
+  },
+  "metrics": [
+    {
+      "classification": "Secure Coding Validation",
+      "l5_metric": "Best Practice Compliance",
+      "covered": "yes",
+      "score": 100,
+      "value": "100/100",
+      "result": "PASS",
+      "coverage_percent": 100,
+      "platform_ratio": 100,
+      "raw_sources_present": true,
+      "semgrep_bandit_native": true,
+      "raw_parameters": {
+        "files_scanned": 2,
+        "lines_of_code": 63,
+        "bandit_findings": 0,
+        "semgrep_findings": 0,
+        "total_findings": 0,
+        "high_severity_count": 0,
+        "medium_severity_count": 0,
+        "low_severity_count": 0,
+        "category_issue_count": 0,
+        "dependency_count": 2,
+        "semgrep_rules_executed": 37
+      },
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+    },
+    {
+      "classification": "Input Validation Testing",
+      "l5_metric": "Entry Point Sanitization",
+      "covered": "yes",
+      "score": 100,
+      "value": "100/100",
+      "result": "PASS",
+      "coverage_percent": 100,
+      "platform_ratio": 100,
+      "raw_sources_present": true,
+      "semgrep_bandit_native": true,
+      "raw_parameters": {
+        "files_scanned": 2,
+        "lines_of_code": 63,
+        "bandit_findings": 0,
+        "semgrep_findings": 0,
+        "total_findings": 0,
+        "high_severity_count": 0,
+        "medium_severity_count": 0,
+        "low_severity_count": 0,
+        "category_issue_count": 0,
+        "dependency_count": 2,
+        "semgrep_rules_executed": 37
+      },
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+    },
+    {
+      "classification": "Data Flow Security Analysis",
+      "l5_metric": "Sensitive Information Tracking",
+      "covered": "yes",
+      "score": 100,
+      "value": "100/100",
+      "result": "PASS",
+      "coverage_percent": 100,
+      "platform_ratio": 100,
+      "raw_sources_present": true,
+      "semgrep_bandit_native": true,
+      "raw_parameters": {
+        "files_scanned": 2,
+        "lines_of_code": 63,
+        "bandit_findings": 0,
+        "semgrep_findings": 0,
+        "total_findings": 0,
+        "high_severity_count": 0,
+        "medium_severity_count": 0,
+        "low_severity_count": 0,
+        "category_issue_count": 0,
+        "dependency_count": 2,
+        "semgrep_rules_executed": 37
+      },
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+    },
+    {
+      "classification": "Authentication & Authorization Weakness Detection",
+      "l5_metric": "Access Control Verification",
+      "covered": "yes",
+      "score": 100,
+      "value": "100/100",
+      "result": "PASS",
+      "coverage_percent": 100,
+      "platform_ratio": 100,
+      "raw_sources_present": true,
+      "semgrep_bandit_native": true,
+      "raw_parameters": {
+        "files_scanned": 2,
+        "lines_of_code": 63,
+        "bandit_findings": 0,
+        "semgrep_findings": 0,
+        "total_findings": 0,
+        "high_severity_count": 0,
+        "medium_severity_count": 0,
+        "low_severity_count": 0,
+        "category_issue_count": 0,
+        "dependency_count": 2,
+        "semgrep_rules_executed": 37
+      },
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+    },
+    {
+      "classification": "Dependency & Library Vulnerability Detection",
+      "l5_metric": "Supply Chain Security",
+      "covered": "yes",
+      "score": 100,
+      "value": "100/100",
+      "result": "PASS",
+      "coverage_percent": 100,
+      "platform_ratio": 100,
+      "raw_sources_present": true,
+      "semgrep_bandit_native": true,
+      "raw_parameters": {
+        "files_scanned": 2,
+        "lines_of_code": 63,
+        "bandit_findings": 0,
+        "semgrep_findings": 0,
+        "total_findings": 0,
+        "high_severity_count": 0,
+        "medium_severity_count": 0,
+        "low_severity_count": 0,
+        "category_issue_count": 0,
+        "dependency_count": 2,
+        "semgrep_rules_executed": 37
+      },
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+    },
+    {
+      "classification": "Compliance & Security Standard Validation",
+      "l5_metric": "Regulatory Alignment",
+      "covered": "yes",
+      "score": 100,
+      "value": "100/100",
+      "result": "PASS",
+      "coverage_percent": 100,
+      "platform_ratio": 100,
+      "raw_sources_present": true,
+      "semgrep_bandit_native": true,
+      "raw_parameters": {
+        "files_scanned": 2,
+        "lines_of_code": 63,
+        "bandit_findings": 0,
+        "semgrep_findings": 0,
+        "total_findings": 0,
+        "high_severity_count": 0,
+        "medium_severity_count": 0,
+        "low_severity_count": 0,
+        "category_issue_count": 0,
+        "dependency_count": 2,
+        "semgrep_rules_executed": 37
+      },
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+    },
+    {
+      "classification": "Security Vulnerability Detection",
+      "l5_metric": "Exploit Surface Identification",
+      "covered": "yes",
+      "score": 100,
+      "value": "100/100",
+      "result": "PASS",
+      "coverage_percent": 100,
+      "platform_ratio": 100,
+      "raw_sources_present": true,
+      "semgrep_bandit_native": true,
+      "raw_parameters": {
+        "files_scanned": 2,
+        "lines_of_code": 63,
+        "bandit_findings": 0,
+        "semgrep_findings": 0,
+        "total_findings": 0,
+        "high_severity_count": 0,
+        "medium_severity_count": 0,
+        "low_severity_count": 0,
+        "category_issue_count": 0,
+        "dependency_count": 2,
+        "semgrep_rules_executed": 37
+      },
+      "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+    }
+  ],
+  "platform_scores": {
+    "Secure Coding Validation": 100.0,
+    "Input Validation Testing": 100.0,
+    "Data Flow Security Analysis": 100.0,
+    "Authentication & Authorization Weakness Detection": 100.0,
+    "Dependency & Library Vulnerability Detection": 100.0,
+    "Compliance & Security Standard Validation": 100.0,
+    "Security Vulnerability Detection": 100.0
+  },
+  "platform_metrics": {
+    "tool": "Semgrep OSS + Bandit",
+    "target_repository": "sample_subject",
+    "metrics_total": 7,
+    "metrics_covered": 7,
+    "metric_coverage_complete": true,
+    "Secure Coding Validation": 100,
+    "Input Validation Testing": 100,
+    "Data Flow Security Analysis": 100,
+    "Authentication & Authorization Weakness Detection": 100,
+    "Dependency & Library Vulnerability Detection": 100,
+    "Compliance & Security Standard Validation": 100,
+    "Security Vulnerability Detection": 100
+  },
+  "metric_evidence": {
+    "tool": "Semgrep OSS + Bandit",
+    "metrics_total": 7,
+    "metrics_covered": 7,
+    "metric_coverage_complete": true,
+    "scores": {
+      "Secure Coding Validation": 100.0,
+      "Input Validation Testing": 100.0,
+      "Data Flow Security Analysis": 100.0,
+      "Authentication & Authorization Weakness Detection": 100.0,
+      "Dependency & Library Vulnerability Detection": 100.0,
+      "Compliance & Security Standard Validation": 100.0,
+      "Security Vulnerability Detection": 100.0
+    },
+    "metric_evidence": [
+      {
+        "l3_strategy": "Security White-box Testing",
+        "classification": "Secure Coding Validation",
+        "l5_metric": "Best Practice Compliance",
+        "score": 100.0,
+        "covered": true,
+        "semgrep_bandit_native": true,
+        "raw_parameters": {
+          "files_scanned": 2,
+          "lines_of_code": 63,
+          "bandit_findings": 0,
+          "semgrep_findings": 0,
+          "total_findings": 0,
+          "high_severity_count": 0,
+          "medium_severity_count": 0,
+          "low_severity_count": 0,
+          "category_issue_count": 0,
+          "dependency_count": 2,
+          "semgrep_rules_executed": 37
+        },
+        "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+      },
+      {
+        "l3_strategy": "Security White-box Testing",
+        "classification": "Input Validation Testing",
+        "l5_metric": "Entry Point Sanitization",
+        "score": 100.0,
+        "covered": true,
+        "semgrep_bandit_native": true,
+        "raw_parameters": {
+          "files_scanned": 2,
+          "lines_of_code": 63,
+          "bandit_findings": 0,
+          "semgrep_findings": 0,
+          "total_findings": 0,
+          "high_severity_count": 0,
+          "medium_severity_count": 0,
+          "low_severity_count": 0,
+          "category_issue_count": 0,
+          "dependency_count": 2,
+          "semgrep_rules_executed": 37
+        },
+        "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+      },
+      {
+        "l3_strategy": "Security White-box Testing",
+        "classification": "Data Flow Security Analysis",
+        "l5_metric": "Sensitive Information Tracking",
+        "score": 100.0,
+        "covered": true,
+        "semgrep_bandit_native": true,
+        "raw_parameters": {
+          "files_scanned": 2,
+          "lines_of_code": 63,
+          "bandit_findings": 0,
+          "semgrep_findings": 0,
+          "total_findings": 0,
+          "high_severity_count": 0,
+          "medium_severity_count": 0,
+          "low_severity_count": 0,
+          "category_issue_count": 0,
+          "dependency_count": 2,
+          "semgrep_rules_executed": 37
+        },
+        "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+      },
+      {
+        "l3_strategy": "Security White-box Testing",
+        "classification": "Authentication & Authorization Weakness Detection",
+        "l5_metric": "Access Control Verification",
+        "score": 100.0,
+        "covered": true,
+        "semgrep_bandit_native": true,
+        "raw_parameters": {
+          "files_scanned": 2,
+          "lines_of_code": 63,
+          "bandit_findings": 0,
+          "semgrep_findings": 0,
+          "total_findings": 0,
+          "high_severity_count": 0,
+          "medium_severity_count": 0,
+          "low_severity_count": 0,
+          "category_issue_count": 0,
+          "dependency_count": 2,
+          "semgrep_rules_executed": 37
+        },
+        "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+      },
+      {
+        "l3_strategy": "Security White-box Testing",
+        "classification": "Dependency & Library Vulnerability Detection",
+        "l5_metric": "Supply Chain Security",
+        "score": 100.0,
+        "covered": true,
+        "semgrep_bandit_native": true,
+        "raw_parameters": {
+          "files_scanned": 2,
+          "lines_of_code": 63,
+          "bandit_findings": 0,
+          "semgrep_findings": 0,
+          "total_findings": 0,
+          "high_severity_count": 0,
+          "medium_severity_count": 0,
+          "low_severity_count": 0,
+          "category_issue_count": 0,
+          "dependency_count": 2,
+          "semgrep_rules_executed": 37
+        },
+        "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+      },
+      {
+        "l3_strategy": "Security White-box Testing",
+        "classification": "Compliance & Security Standard Validation",
+        "l5_metric": "Regulatory Alignment",
+        "score": 100.0,
+        "covered": true,
+        "semgrep_bandit_native": true,
+        "raw_parameters": {
+          "files_scanned": 2,
+          "lines_of_code": 63,
+          "bandit_findings": 0,
+          "semgrep_findings": 0,
+          "total_findings": 0,
+          "high_severity_count": 0,
+          "medium_severity_count": 0,
+          "low_severity_count": 0,
+          "category_issue_count": 0,
+          "dependency_count": 2,
+          "semgrep_rules_executed": 37
+        },
+        "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+      },
+      {
+        "l3_strategy": "Security White-box Testing",
+        "classification": "Security Vulnerability Detection",
+        "l5_metric": "Exploit Surface Identification",
+        "score": 100.0,
+        "covered": true,
+        "semgrep_bandit_native": true,
+        "raw_parameters": {
+          "files_scanned": 2,
+          "lines_of_code": 63,
+          "bandit_findings": 0,
+          "semgrep_findings": 0,
+          "total_findings": 0,
+          "high_severity_count": 0,
+          "medium_severity_count": 0,
+          "low_severity_count": 0,
+          "category_issue_count": 0,
+          "dependency_count": 2,
+          "semgrep_rules_executed": 37
+        },
+        "formula": "MAX(0, 100 - high*25 - medium*10 - low*3) per category"
+      }
+    ]
+  },
+  "totals": {
+    "files_scanned": 2,
+    "lines_of_code": 63,
+    "total_findings": 0,
+    "high_severity_count": 0,
+    "medium_severity_count": 0,
+    "low_severity_count": 0,
+    "bandit_findings": 0,
+    "semgrep_findings": 0,
+    "dependency_count": 2,
+    "semgrep_rules_executed": 37,
+    "clean_files": 200,
+    "secure_files_ratio": 100,
+    "input_validation_ratio": 100,
+    "data_flow_security_ratio": 100,
+    "auth_control_ratio": 100,
+    "dependency_security_ratio": 100,
+    "compliance_alignment_ratio": 100,
+    "exploit_surface_ratio": 100,
+    "Secure Coding Validation": 100,
+    "secure_coding_validation_score": 100,
+    "Input Validation Testing": 100,
+    "input_validation_testing_score": 100,
+    "Data Flow Security Analysis": 100,
+    "data_flow_security_analysis_score": 100,
+    "Authentication & Authorization Weakness Detection": 100,
+    "auth_weakness_detection_score": 100,
+    "Dependency & Library Vulnerability Detection": 100,
+    "dependency_vulnerability_detection_score": 100,
+    "Compliance & Security Standard Validation": 100,
+    "compliance_validation_score": 100,
+    "Security Vulnerability Detection": 100,
+    "security_vulnerability_detection_score": 100
+  },
+  "platform_totals": {
+    "files_scanned": 2,
+    "lines_of_code": 63,
+    "total_findings": 0,
+    "high_severity_count": 0,
+    "medium_severity_count": 0,
+    "low_severity_count": 0,
+    "bandit_findings": 0,
+    "semgrep_findings": 0,
+    "dependency_count": 2,
+    "semgrep_rules_executed": 37,
+    "clean_files": 200,
+    "secure_files_ratio": 100,
+    "input_validation_ratio": 100,
+    "data_flow_security_ratio": 100,
+    "auth_control_ratio": 100,
+    "dependency_security_ratio": 100,
+    "compliance_alignment_ratio": 100,
+    "exploit_surface_ratio": 100,
+    "Secure Coding Validation": 100,
+    "secure_coding_validation_score": 100,
+    "Input Validation Testing": 100,
+    "input_validation_testing_score": 100,
+    "Data Flow Security Analysis": 100,
+    "data_flow_security_analysis_score": 100,
+    "Authentication & Authorization Weakness Detection": 100,
+    "auth_weakness_detection_score": 100,
+    "Dependency & Library Vulnerability Detection": 100,
+    "dependency_vulnerability_detection_score": 100,
+    "Compliance & Security Standard Validation": 100,
+    "compliance_validation_score": 100,
+    "Security Vulnerability Detection": 100,
+    "security_vulnerability_detection_score": 100
+  },
+  "Secure Coding Validation": 100,
+  "secure_coding_validation_score": 100,
+  "Input Validation Testing": 100,
+  "input_validation_testing_score": 100,
+  "Data Flow Security Analysis": 100,
+  "data_flow_security_analysis_score": 100,
+  "Authentication & Authorization Weakness Detection": 100,
+  "auth_weakness_detection_score": 100,
+  "Dependency & Library Vulnerability Detection": 100,
+  "dependency_vulnerability_detection_score": 100,
+  "Compliance & Security Standard Validation": 100,
+  "compliance_validation_score": 100,
+  "Security Vulnerability Detection": 100,
+  "security_vulnerability_detection_score": 100
+}

@@ -1,0 +1,30 @@
+{
+  "platform": "Testable",
+  "tool": "Semgrep OSS + Bandit",
+  "trigger_command": "python semgrep_bandit_trigger.py",
+  "trigger_command_alt": "python -m semgrep_bandit_platform sample_subject -o semgrep_bandit.json",
+  "do_not_run_raw_tools_alone": true,
+  "primary_output_file": "semgrep_bandit.json",
+  "required_root_fields": [
+    "totals",
+    "Secure Coding Validation",
+    "Input Validation Testing",
+    "Data Flow Security Analysis",
+    "Authentication & Authorization Weakness Detection",
+    "Dependency & Library Vulnerability Detection",
+    "Compliance & Security Standard Validation",
+    "Security Vulnerability Detection",
+    "bandit_report",
+    "semgrep_report",
+    "summary"
+  ],
+  "expected_scores": {
+    "Secure Coding Validation": 100,
+    "Input Validation Testing": 100,
+    "Data Flow Security Analysis": 100,
+    "Authentication & Authorization Weakness Detection": 100,
+    "Dependency & Library Vulnerability Detection": 100,
+    "Compliance & Security Standard Validation": 100,
+    "Security Vulnerability Detection": 100
+  }
+}

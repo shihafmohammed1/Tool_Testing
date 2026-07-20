@@ -1,0 +1,11 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\91995\Documents\python tool validation\testmon\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+testmon: changed files: 0, unchanged files: 88, environment: default
+rootdir: C:\Users\91995\Documents\python tool validation\testmon
+configfile: pytest.ini (WARNING: ignoring pytest config in pyproject.toml!)
+testpaths: tests
+plugins: testmon-2.2.0
+collecting ... collected 0 items
+
+============================ no tests ran in 0.03s ============================
